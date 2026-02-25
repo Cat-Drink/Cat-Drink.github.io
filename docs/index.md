@@ -803,19 +803,19 @@ hr {
 -   :material-gamepad-variant-outline:{ .lg .middle } __学习__
     
     ---
-    [Bug笔记](blog/study/2026-02-11-bugbiji.md)  
-    [Dos Comand](blog/study/2026-02-11-doscommand.md)  
-    [虚拟机相关问题解决](blog/study/2026-02-11-xvnijixianggwentjiej.md)
-    [大数据系统在低水平主机的性能优化方案](blog/study/2026-02-19-dashujxitzaidishuipingzhujidexingnyhuafeangan.md)
+    [Bug笔记](blog/study/2026-02-11-Bug笔记.md)  
+    [Dos Comand](blog/study/2026-02-11-Dos_Command.md)  
+    [虚拟机相关问题解决](blog/study/2026-02-11-虚拟机相关问题解决.md)
+    [大数据系统在低水平主机的性能优化方案](blog/study/2026-02-19-大数据系统在低水平主机的性能优化方案.md)
     ---
 
 -   :material-gamepad-variant-outline:{ .lg .middle } __分享__
     
     ---
-    [一些不错的github项目](blog/web/2026-02-09-yxiebcdegithubxm.md)  
-    [一些不错的应用](blog/web/2026-02-08-yixiebucuodeyingyong.md)  
-    [一些工具网站](blog/web/2026-02-07-yixiegongjv.md)
-    [一些好玩的小网站](blog/web/2026-02-07-yixiehaowandexiaowangzhang.md)
+    [一些不错的github项目](blog/web/2026-02-09-一些不错的github项目.md)  
+    [一些不错的应用](blog/web/2026-02-08-一些不错的应用.md)  
+    [一些工具网站](blog/web/2026-02-24-一些工具网站推荐.md)
+    [一些好玩的小网站](blog/web/2026-02-07-一些好玩的小网站.md)
 
 <!-- - [:octicons-arrow-right-24: 了解我](about/geren/#_4){ data-preview } -->
 </div>
