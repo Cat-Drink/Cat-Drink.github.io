@@ -62,8 +62,8 @@ nav = [
     "blog/study/2026-02-18-虚拟机下ubuntu无法访问github如何解决？.md",
     "blog/study/2026-02-19-大数据系统在低水平主机的性能优化方案.md",
     "blog/study/2026-02-20-Promethus_HTTP_API_如何调用_PromQL.md",
-    "blog/study/Docker的一些问题处理心得.md",
-    "blog/study/技术知识点汇总.md"]},
+    "blog/study/2026-02-28-杂项.md",
+    "blog/study/2026-03-01-Docker_Bug_Process.md"]},
     { "放松" = ["blog/relax/index.md",
     "blog/relax/2026-02-15-电脑键盘的快捷键用法.md"]},
     { "关于我" = "about.md" }

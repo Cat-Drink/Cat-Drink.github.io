@@ -191,6 +191,10 @@ document.head.appendChild(style);
     waifuElement.addEventListener('mousedown', startDrag);
     document.addEventListener('mousemove', drag);
     document.addEventListener('mouseup', endDrag);
+    
+    // 确保初始位置正确
+    waifuElement.style.bottom = '20px';
+    waifuElement.style.right = '20px';
   }
   
   // 开始拖动
