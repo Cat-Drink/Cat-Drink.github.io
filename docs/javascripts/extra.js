@@ -245,7 +245,6 @@ document.head.appendChild(style);
       waifuElement.style.cursor = 'grab';
     }
   }
-  }
   
   // 启动监听
   waitForWaifu();
