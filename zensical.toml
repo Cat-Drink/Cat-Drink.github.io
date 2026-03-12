@@ -46,27 +46,49 @@ extra_css = [
 # ===== 导航配置 [Navigation] =====
 nav = [
     { "主页" = "index.md" },
-    { "分享" = ["blog/web/index.md",
-    "blog/web/2026-02-07-一些好玩的小网站.md",
-    "blog/web/2026-02-08-一些不错的应用.md",
-    "blog/web/2026-02-09-一些不错的github项目.md",
-    "blog/web/2026-02-24-一些工具网站推荐.md"]},
-    { "学习" = ["blog/study/index.md",
-    "blog/study/2026-02-10-Linux系统下中文乱码的问题.md",
-    "blog/study/2026-02-11-Bug笔记.md",
-    "blog/study/2026-02-11-Dos_Comand.md",
-    "blog/study/2026-02-11-虚拟机相关问题解决.md",
-    "blog/study/2026-02-15-iframe没有id和name时如何定位.md",
-    "blog/study/2026-02-17-如何解决git冲突_refusing_to_merge_unrelated_histories.md",
-    "blog/study/2026-02-18-电脑突然关机重启_手把手教你追溯原因.md",
-    "blog/study/2026-02-18-虚拟机下ubuntu无法访问github如何解决？.md",
-    "blog/study/2026-02-19-大数据系统在低水平主机的性能优化方案.md",
-    "blog/study/2026-02-20-Promethus_HTTP_API_如何调用_PromQL.md",
-    "blog/study/2026-02-28-杂项.md",
-    "blog/study/2026-03-01-Docker_Bug_Process.md"]},
-    { "放松" = ["blog/relax/index.md",
-    "blog/relax/2026-02-15-电脑键盘的快捷键用法.md"]},
-    { "关于我" = "about.md" }
+    { "分享" = [
+        "blog/web/index.md",
+        "blog/web/2026-02-07-一些好玩的小网站.md",
+        "blog/web/2026-02-08-一些不错的应用.md",
+        "blog/web/2026-02-09-一些不错的github项目.md",
+        "blog/web/2026-02-24-一些工具网站推荐.md"]},
+    { "学习" = [
+        "blog/study/index.md",
+        "blog/study/2026-02-10-Linux系统下中文乱码的问题.md",
+        "blog/study/2026-02-11-Bug笔记.md",
+        "blog/study/2026-02-11-Dos_Comand.md",
+        "blog/study/2026-02-11-虚拟机相关问题解决.md",
+        "blog/study/2026-02-15-iframe没有id和name时如何定位.md",
+        "blog/study/2026-02-17-如何解决git冲突_refusing_to_merge_unrelated_histories.md",
+        "blog/study/2026-02-18-电脑突然关机重启_手把手教你追溯原因.md",
+        "blog/study/2026-02-18-虚拟机下ubuntu无法访问github如何解决？.md",
+        "blog/study/2026-02-19-大数据系统在低水平主机的性能优化方案.md",
+        "blog/study/2026-02-20-Promethus_HTTP_API_如何调用_PromQL.md",
+        "blog/study/2026-02-28-杂项.md",
+        "blog/study/2026-03-01-Docker_Bug_Process.md"]},
+    { "放松" = [
+        "blog/relax/index.md",
+        "blog/relax/2026-02-15-电脑键盘的快捷键用法.md"]},
+    { "上岸备战" = [
+        "blog/coding/index.md",
+        "blog/coding/刷题笔记.md",
+        "blog/coding/手撕题.md"]},
+    { "工作" = [
+        "blog/job/index.md",
+        "blog/job/2026-03-01-Flink.md",
+        "blog/job/2026-03-01-Hadoop.md",
+        "blog/job/2026-03-01-Hive.md",
+        "blog/job/2026-03-01-Kafka.md",
+        "blog/job/2026-03-01-Spark.md",
+        "blog/job/2026-03-01-Zookeeper.md",
+        "blog/job/2026-03-01-数据仓库.md",
+        "blog/job/2026-03-01-计算机网络.md"]},
+    { "关于我" = [
+        "blog/about/about.md",
+        "blog/about/个人简历.md",
+        "blog/about/404.md",
+        "blog/about/大学期间要完成的事情.md",
+        "blog/about/毕业之前要做的事.md"]}
 ]
 
 # ==========================================
