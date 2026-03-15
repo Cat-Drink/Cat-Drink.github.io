@@ -6,6 +6,10 @@
 document$.subscribe(function() {
   console.log('Zensical-CatDrink-Blog loaded');
   
+  if (!sessionStorage.getItem('refreshed')) {
+  sessionStorage.setItem('refreshed', 'true');
+  location.reload(true);
+}
 });
 
 // 搞笑标题功能
