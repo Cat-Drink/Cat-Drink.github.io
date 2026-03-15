@@ -5,9 +5,24 @@
 // 即时导航兼容
 document$.subscribe(function() {
   console.log('Zensical-CatDrink-Blog loaded');
-  // 重新初始化看板娘
+  
+  // 解决看板娘与即时导航的冲突
   if (typeof loadWaifu === 'function') {
+    // 先移除旧的看板娘
+    const oldWaifu = document.getElementById('waifu');
+    if (oldWaifu) {
+      oldWaifu.remove();
+    }
+    
+    // 重新初始化看板娘
     loadWaifu();
+    
+    // 重新初始化看板娘拖动功能
+    setTimeout(function() {
+      if (typeof waitForWaifu === 'function') {
+        waitForWaifu();
+      }
+    }, 1000);
   }
 });
 
@@ -181,7 +196,14 @@ document.head.appendChild(style);
   let waifuElement;
   
   // 监听看板娘加载
-  function waitForWaifu() {
+  window.waitForWaifu = function() {
+    // 先移除旧的事件监听器
+    if (waifuElement) {
+      waifuElement.removeEventListener('mousedown', startDrag);
+      document.removeEventListener('mousemove', drag);
+      document.removeEventListener('mouseup', endDrag);
+    }
+    
     waifuElement = document.getElementById('waifu');
     if (waifuElement) {
       initDrag();
