@@ -5,6 +5,7 @@
 // 即时导航兼容
 document$.subscribe(function() {
   console.log('Zensical-CatDrink-Blog loaded');
+  
 });
 
 // 搞笑标题功能
@@ -169,3 +170,4 @@ document.head.appendChild(style);
     }
   });
 })();
+
