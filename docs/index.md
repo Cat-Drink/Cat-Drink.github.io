@@ -7,6 +7,7 @@ hide:
   - footer
   - feedback
 # comments: true
+instant: false
 ---
 
 
