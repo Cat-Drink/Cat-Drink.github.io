@@ -9,6 +9,10 @@ date: 2026-01-22
 
 一个小小博客站，记录自己的学习过程。
 
+#### 评论系统实现
+
+[Giscus](https://giscus.app/zh-CN)
+
 ## 作者
 
 **CatDrink**
