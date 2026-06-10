@@ -44,4 +44,97 @@ img.img1, img.img2, img.img3 {
   background: linear-gradient(135deg, #4a6cf7 0%, #5a3d99 100%);
 }
 
+/* ==========================================
+   可滑动卡片列表 (参考 uiu sliding-square-list 设计)
+   ========================================== */
+
+/* 滚动容器：隐藏滚动条但保留滚动能力 */
+.web-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE/Edge */
+  scroll-behavior: smooth;
+  padding-bottom: 0.25rem;
+  width: 100%;                    /* 确保容器有宽度约束，overflow 才能生效 */
+  touch-action: pan-y pinch-zoom; /* 允许页面垂直滚动，水平方向由 JS 拖拽接管 */
+  cursor: grab;                   /* 提示可拖拽 */
+}
+.web-scroll::-webkit-scrollbar {
+  display: none;                  /* Chrome/Safari */
+}
+
+/* 卡片列表：flex 横向排列 */
+.web-card-list {
+  display: flex;
+  gap: 0.75rem;
+  width: max-content;
+  padding: 0.25rem 0 0.5rem 0;
+  /* 关键：禁止文本选中 + 禁止链接拖拽，使触摸/鼠标拖动能正常触发滚动 */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* 单张卡片 */
+.web-card {
+  flex-shrink: 0;
+  width: 150px;
+  min-height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 1rem 0.6rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.8rem;
+  background: var(--md-default-bg-color);
+  text-decoration: none !important;
+  text-align: center;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  scroll-snap-align: start;
+  /* 关键：禁止浏览器默认的链接拖拽行为，否则拖动卡片时会被识别为拖拽链接 */
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.web-card:hover {
+  border-color: var(--md-primary-fg-color);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.13);
+  transform: translateY(-2px);
+}
+
+/* 卡片图标（emoji） */
+.web-card-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+/* 卡片标题 */
+.web-card-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color);
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+/* 卡片标签 */
+.web-card-tag {
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.2;
+}
+
+/* 深色模式：卡片阴影微调 */
+[data-md-color-scheme="slate"] .web-card {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+[data-md-color-scheme="slate"] .web-card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+}
+
 

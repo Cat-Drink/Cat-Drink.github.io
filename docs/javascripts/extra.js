@@ -175,3 +175,61 @@ document.head.appendChild(style);
   });
 })();
 
+/* ==========================================
+   可滑动卡片列表 — 拖拽滚动
+   参考 uiu/sliding-square-list.tsx 的 pointer 事件实现
+   ========================================== */
+document$.subscribe(function() {
+  document.querySelectorAll('.web-scroll').forEach(function(container) {
+    // 防止 MkDocs 即时导航时重复绑定
+    if (container.dataset.scrollInit) return;
+    container.dataset.scrollInit = 'true';
+
+    var isDown = false;
+    var startX = 0;
+    var scrollStart = 0;
+    var moved = false;
+
+    container.addEventListener('pointerdown', function(e) {
+      if (e.button !== 0) return; // 只响应左键
+      isDown = true;
+      moved = false;
+      startX = e.pageX;
+      scrollStart = container.scrollLeft;
+      container.style.cursor = 'grabbing';
+      container.style.scrollBehavior = 'auto'; // 拖拽时关闭平滑滚动
+      container.setPointerCapture(e.pointerId);
+    });
+
+    container.addEventListener('pointermove', function(e) {
+      if (!isDown) return;
+      var dx = e.pageX - startX;
+      if (Math.abs(dx) > 4) moved = true;
+      container.scrollLeft = scrollStart - dx;
+    });
+
+    var release = function() {
+      if (!isDown) return;
+      isDown = false;
+      container.style.cursor = '';
+      container.style.scrollBehavior = 'smooth';
+    };
+
+    container.addEventListener('pointerup', release);
+    container.addEventListener('pointerleave', release);
+    container.addEventListener('pointercancel', release);
+
+    // 拖拽过就不触发链接点击
+    container.querySelectorAll('.web-card').forEach(function(card) {
+      card.addEventListener('click', function(e) {
+        if (moved) {
+          e.preventDefault();
+          e.stopPropagation();
+          e.stopImmediatePropagation();
+          moved = false;
+        }
+      }, true);
+    });
+  });
+});
+
