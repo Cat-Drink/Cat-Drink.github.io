@@ -1036,10 +1036,8 @@ hr {
 -   :material-gamepad-variant-outline:{ .lg .middle } __分享__
     
     ---
-    [一些不错的github项目](blog/web/2026-02-09-一些不错的github项目.md)  
-    [一些不错的应用](blog/web/2026-02-08-一些不错的应用.md)  
-    [一些工具网站](blog/web/2026-02-24-一些工具网站推荐.md) 
-    [一些好玩的小网站](blog/web/2026-02-07-一些好玩的小网站.md)
+    [github项目分享](blog/web/2026-02-09-github项目分享.md)  
+    [网站分享](blog/web/2026-02-07-网站分享.md)
     
     ---
 
