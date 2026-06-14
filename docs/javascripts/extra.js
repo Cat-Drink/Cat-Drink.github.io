@@ -189,7 +189,6 @@ document$.subscribe(function() {
     var startX = 0;
     var scrollStart = 0;
     var moved = false;
-    var clickedCard = null;  // 记录 pointerdown 时命中的卡片
 
     container.addEventListener('pointerdown', function(e) {
       if (e.button !== 0) return; // 只响应左键
@@ -197,8 +196,6 @@ document$.subscribe(function() {
       moved = false;
       startX = e.pageX;
       scrollStart = container.scrollLeft;
-      // 找出 pointerdown 时位于指针下方的 .web-card
-      clickedCard = e.target.closest('.web-card');
       container.style.cursor = 'grabbing';
       container.style.scrollBehavior = 'auto'; // 拖拽时关闭平滑滚动
       container.setPointerCapture(e.pointerId);
@@ -207,7 +204,7 @@ document$.subscribe(function() {
     container.addEventListener('pointermove', function(e) {
       if (!isDown) return;
       var dx = e.pageX - startX;
-      if (Math.abs(dx) > 8) moved = true;
+      if (Math.abs(dx) > 4) moved = true;
       container.scrollLeft = scrollStart - dx;
     });
 
@@ -216,100 +213,23 @@ document$.subscribe(function() {
       isDown = false;
       container.style.cursor = '';
       container.style.scrollBehavior = 'smooth';
-
-      // 未拖拽且有命中卡片 → 弹出放大弹窗
-      if (!moved && clickedCard) {
-        showCardZoom(clickedCard);
-        clickedCard = null;
-      }
     };
 
     container.addEventListener('pointerup', release);
     container.addEventListener('pointerleave', release);
     container.addEventListener('pointercancel', release);
 
-    // 拖拽过 → 阻止链接跳转；未拖拽 → 放大弹窗已由 pointerup 触发，同样阻止跳转
+    // 拖拽过就不触发链接点击
     container.querySelectorAll('.web-card').forEach(function(card) {
       card.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
         if (moved) {
+          e.preventDefault();
+          e.stopPropagation();
           e.stopImmediatePropagation();
+          moved = false;
         }
       }, true);
     });
   });
 });
-
-/* ==========================================
-   卡片放大弹窗
-   ========================================== */
-function showCardZoom(card) {
-  // 获取卡片信息
-  var icon  = card.querySelector('.web-card-icon');
-  var title = card.querySelector('.web-card-title');
-  var tag   = card.querySelector('.web-card-tag');
-  var href  = card.getAttribute('href');
-
-  // 创建遮罩层
-  var overlay = document.createElement('div');
-  overlay.className = 'web-card-overlay';
-
-  // 创建放大卡片
-  var zoomed = document.createElement('div');
-  zoomed.className = 'web-card-zoomed';
-
-  var iconEl = document.createElement('span');
-  iconEl.className = 'web-card-icon';
-  iconEl.textContent = icon ? icon.textContent : '';
-
-  var titleEl = document.createElement('span');
-  titleEl.className = 'web-card-title';
-  titleEl.textContent = title ? title.textContent : '';
-
-  var tagEl = document.createElement('span');
-  tagEl.className = 'web-card-tag';
-  tagEl.textContent = tag ? tag.textContent : '';
-
-  var visitBtn = document.createElement('a');
-  visitBtn.className = 'web-card-visit-btn';
-  visitBtn.textContent = '访问网站';
-  visitBtn.href = href;
-  visitBtn.target = '_blank';
-  visitBtn.rel = 'noopener';
-  visitBtn.addEventListener('click', function(e) {
-    e.stopPropagation();
-  });
-
-  var closeHint = document.createElement('div');
-  closeHint.className = 'web-card-close-hint';
-  closeHint.textContent = '点击空白处或按 ESC 关闭';
-
-  zoomed.appendChild(iconEl);
-  zoomed.appendChild(titleEl);
-  zoomed.appendChild(tagEl);
-  zoomed.appendChild(visitBtn);
-  zoomed.appendChild(closeHint);
-
-  overlay.appendChild(zoomed);
-  document.body.appendChild(overlay);
-
-  // 关闭函数
-  function close() {
-    overlay.removeEventListener('click', onOverlayClick);
-    document.removeEventListener('keydown', onKeyDown);
-    overlay.remove();
-  }
-
-  function onOverlayClick(e) {
-    if (e.target === overlay) close();
-  }
-
-  function onKeyDown(e) {
-    if (e.key === 'Escape') close();
-  }
-
-  overlay.addEventListener('click', onOverlayClick);
-  document.addEventListener('keydown', onKeyDown);
-}
 
