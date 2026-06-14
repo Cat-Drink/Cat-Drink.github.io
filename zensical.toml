@@ -52,7 +52,15 @@ nav = [
         "blog/web/2026-02-09-github项目分享.md"]},
     { "学习" = [
         "blog/study/index.md",
-        "blog/study/2026-02-10-Linux系统下中文乱码的问题.md",
+        { "Git" = [
+            "blog/study/git/index.md",
+            "blog/study/git/2026-03-20-Git.md",
+            "blog/study/git/2026-03-20-Git Debug.md",
+            "blog/study/git/2026-03-20-Git command.md",
+            "blog/study/git/2026-03-20-Git分支.md",
+            "blog/study/git/2026-03-20-Git远程仓库.md"
+        ]},
+        { "撞南墙" = ["blog/study/2026-02-10-Linux系统下中文乱码的问题.md",
         "blog/study/2026-02-11-Bug笔记.md",
         "blog/study/2026-02-11-Dos_Comand.md",
         "blog/study/2026-02-11-虚拟机相关问题解决.md",
@@ -63,7 +71,7 @@ nav = [
         "blog/study/2026-02-19-大数据系统在低水平主机的性能优化方案.md",
         "blog/study/2026-02-20-Promethus_HTTP_API_如何调用_PromQL.md",
         "blog/study/2026-02-28-杂项.md",
-        "blog/study/2026-03-01-Docker_Bug_Process.md"]},
+        "blog/study/2026-03-01-Docker_Bug_Process.md"]}]},
     { "放松" = [
         "blog/relax/index.md",
         "blog/relax/2026-02-15-电脑键盘的快捷键用法.md"]},
