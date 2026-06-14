@@ -1027,10 +1027,10 @@ hr {
 -   :material-gamepad-variant-outline:{ .lg .middle } __学习__
     
     ---
-    [Bug笔记](blog/study/2026-02-11-Bug笔记.md)  
-    [Dos Comand](blog/study/2026-02-11-Dos_Command.md)  
-    [虚拟机相关问题解决](blog/study/2026-02-11-虚拟机相关问题解决.md) 
-    [大数据系统在低水平主机的性能优化方案](blog/study/2026-02-19-大数据系统在低水平主机的性能优化方案.md)
+    [Bug笔记](blog/study/explore/2026-02-11-Bug笔记.md)  
+    [Dos Comand](blog/study/explore/2026-02-11-Dos_Command.md)  
+    [虚拟机相关问题解决](blog/study/explore/2026-02-11-虚拟机相关问题解决.md) 
+    [大数据系统在低水平主机的性能优化方案](blog/study/explore/2026-02-19-大数据系统在低水平主机的性能优化方案.md)
     ---
 
 -   :material-gamepad-variant-outline:{ .lg .middle } __分享__
