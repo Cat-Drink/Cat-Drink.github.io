@@ -137,4 +137,147 @@ img.img1, img.img2, img.img3 {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
 }
 
+/* ==========================================
+   卡片点击弹窗 — 旋转放大展示详情
+   ========================================== */
+
+/* 遮罩层 */
+.web-card-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.web-card-modal-visible {
+  opacity: 1;
+}
+
+/* 弹窗内容卡片 */
+.web-card-modal-content {
+  position: relative;
+  width: 360px;
+  max-width: 88vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2.5rem 2rem 2rem;
+  border-radius: 1.2rem;
+  background: var(--md-default-bg-color);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  text-align: center;
+
+  /* 旋转放大入场动画 */
+  transform: scale(0.3) rotate(-15deg);
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+              opacity 0.4s ease;
+}
+
+/* 右上角关闭按钮 */
+.web-card-modal-close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--md-default-fg-color--light);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.web-card-modal-close:hover {
+  background: var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color);
+  transform: scale(1.15);
+}
+
+.web-card-modal-visible .web-card-modal-content {
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+}
+
+/* 关闭动画 */
+.web-card-modal-closing .web-card-modal-content {
+  transform: scale(0.3) rotate(15deg);
+  opacity: 0;
+  transition: transform 0.3s ease-in, opacity 0.25s ease;
+}
+
+.web-card-modal-closing {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* 图标 */
+.web-card-modal-icon {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+/* 标题 */
+.web-card-modal-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+/* 描述 */
+.web-card-modal-tag {
+  font-size: 0.9rem;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.4;
+  padding: 0 0.5rem;
+}
+
+/* 链接按钮 */
+.web-card-modal-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 1.6rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--md-primary-fg-color);
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.web-card-modal-link:hover {
+  background: #3d7ab3;
+  transform: scale(1.05);
+  box-shadow: 0 4px 14px rgba(81, 143, 193, 0.4);
+  color: #fff;
+}
+
+/* 深色模式适配 */
+[data-md-color-scheme="slate"] .web-card-modal-content {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+[data-md-color-scheme="slate"] .web-card-modal-close:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
 

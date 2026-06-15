@@ -222,7 +222,8 @@ document$.subscribe(function() {
 
       // 短按 + 无明显移动 → 视为点击
       if (dx < MOVE_THRESHOLD && dt < TIME_THRESHOLD && tapTarget) {
-        tapTarget.click();
+        e.preventDefault();
+        showCardModal(tapTarget);
       }
 
       isDown = false;
@@ -248,4 +249,78 @@ document$.subscribe(function() {
     });
   });
 });
+
+/* ==========================================
+   卡片点击弹窗 — 旋转放大展示详情
+   ========================================== */
+function showCardModal(card) {
+  // 提取卡片数据
+  var icon = card.querySelector('.web-card-icon');
+  var title = card.querySelector('.web-card-title');
+  var tag = card.querySelector('.web-card-tag');
+  var iconText = icon ? icon.textContent.trim() : '';
+  var titleText = title ? title.textContent.trim() : '';
+  var tagText = tag ? tag.textContent.trim() : '';
+  var linkUrl = card.href || '';
+
+  // 如果已有弹窗则移除
+  var existing = document.querySelector('.web-card-modal-overlay');
+  if (existing) existing.remove();
+
+  // 创建遮罩层
+  var overlay = document.createElement('div');
+  overlay.className = 'web-card-modal-overlay';
+
+  // 创建弹窗内容
+  var modal = document.createElement('div');
+  modal.className = 'web-card-modal-content';
+
+  modal.innerHTML =
+    '<div class="web-card-modal-icon">' + iconText + '</div>' +
+    '<div class="web-card-modal-title">' + escapeHtml(titleText) + '</div>' +
+    '<div class="web-card-modal-tag">' + escapeHtml(tagText) + '</div>' +
+    '<button class="web-card-modal-close" aria-label="关闭">✕</button>' +
+    '<a class="web-card-modal-link" href="' + encodeURI(linkUrl) + '" target="_blank" rel="noopener">网站直达 →</a>';
+
+  overlay.appendChild(modal);
+  document.body.appendChild(overlay);
+
+  // 动画结束后再显示关闭按钮和链接淡入
+  requestAnimationFrame(function() {
+    overlay.classList.add('web-card-modal-visible');
+  });
+
+  // 点击遮罩层/关闭按钮关闭
+  modal.querySelector('.web-card-modal-close').addEventListener('click', function() {
+    closeCardModal(overlay);
+  });
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) {
+      closeCardModal(overlay);
+    }
+  });
+
+  // ESC 键关闭
+  function escHandler(e) {
+    if (e.key === 'Escape') {
+      closeCardModal(overlay);
+      document.removeEventListener('keydown', escHandler);
+    }
+  }
+  document.addEventListener('keydown', escHandler);
+}
+
+function closeCardModal(overlay) {
+  overlay.classList.remove('web-card-modal-visible');
+  overlay.classList.add('web-card-modal-closing');
+  setTimeout(function() {
+    overlay.remove();
+  }, 300); // 与 CSS 过渡时间匹配
+}
+
+function escapeHtml(str) {
+  var div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
 
