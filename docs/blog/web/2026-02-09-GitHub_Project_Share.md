@@ -125,7 +125,6 @@ https://github.com/pkmital/CADL
 
 https://github.com/datawhalechina/happy-llm
 
-https://github.com/AIEraDev/Clypra
 
 https://github.com/zhaoyue4810/pianke
 
@@ -149,10 +148,26 @@ https://github.com/Doryoku1223/lunwen-skill
 
 https://github.com/AgentAlphaAGI/Idea2Paper
 
+https://github.com/OpenCut-app/OpenCut
 
 https://github.com/couragec/LLMInternSkill
 
+https://github.com/Leey21/awesome-ai-research-writing
+
+https://github.com/academic/awesome-datascience
+
+https://github.com/academic/awesome-datascience
 
 https://github.com/op7418/Humanizer-zh
 
+https://github.com/heygen-com/hyperframes:适合做动画类型视频
+
 https://github.com/KKKKhazix/khazix-skills
+
+https://github.com/QIN2DIM/epic-awesome-gamer
+
+https://github.com/DayuanJiang/next-ai-draw-io
+
+https://github.com/santifer/career-ops：适合对岗位需求高，水平高的人群，密集求职的开发者、技术从业者、需要频繁根据岗位调整简历的求职者
+
+https://github.com/can4hou6joeng4/boss-agent-cli
