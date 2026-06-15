@@ -11,163 +11,172 @@ comments: true
 
 ---
 
-[像老乡鸡那样做饭](https://github.com/Gar-b-age/CookLikeHOC) : 集成的老乡鸡的大部分菜品
+## 生活实用
 
-[HowToCook](https://github.com/Anduin2017/HowToCook) : 程序员在家做饭方法指南
+[像老乡鸡那样做饭](https://github.com/Gar-b-age/CookLikeHOC): 集成老乡鸡大部分菜品做法，适合日常做饭参考
 
-
----
-
-[WeClone](https://github.com/xming521/WeClone) : 基于你的WeChat聊天历史生成属于你自己的数字人
-
-[微信公众号推送](https://github.com/wangxinleo/wechat-public-account-push) :一键部署，发点好东西
-
-[微信小应用资源汇总整理](https://github.com/Aufree/awesome-wechat-weapp) : 趣味应用
-
+[HowToCook](https://github.com/Anduin2017/HowToCook): 程序员在家做饭方法指南，适合编程人群入门烹饪
 
 ---
 
-[Predidit/Kazumi: 基于自定义规则的番剧采集APP，支持流媒体在线观看，支持弹幕，支持实时超分辨率。](https://github.com/Predidit/Kazumi)
+## 微信生态
 
+[WeClone](https://github.com/xming521/WeClone): 基于微信聊天历史生成个人数字人，适用于AI数字分身场景
 
----
+[微信公众号推送](https://github.com/wangxinleo/wechat-public-account-push): 一键部署公众号内容推送，适用于自媒体运营
 
-[vercel-labs/agent-browser：用于 AI 代理的浏览器自动化 CLI](https://github.com/vercel-labs/agent-browser)
+[微信小应用资源汇总整理](https://github.com/Aufree/awesome-wechat-weapp): 微信小程序资源导航，适用于小程序开发者
 
-[browser-use/browser-use: 🌐 Make websites accessible for AI agents. Automate tasks online with ease.](https://github.com/browser-use/browser-use)
-
-https://github.com/wechat-article/wechat-article-exporter
-
----
-
-[超棒的大数据 ](https://github.com/oxnr/awesome-bigdata) : 大数据领域的技术导航手册
-
-[大数据入门指南](https://github.com/heibaiying/BigData-Notes) :提供大数据技术（如 Hadoop、Spark 等）的入门指南和学习资料
-
-[大数据成神之路](https://github.com/wangzhiwubigdata/God-Of-BigData) : 如果你不知道自己要从哪开始、要学什么，请看
-
-[有趣的大数据学习资源](https://github.com/BigDataScholar/TheKingOfBigData) : 对原创或非原创的一些文章和一些学习资源做了一个汇总
-
-[互联网公司常用代码赏析](https://github.com/doocs/source-code-hunter) : 剖析和挖掘互联网行业主流技术的底层实现原理
-
+[wechat-article-exporter](https://github.com/wechat-article/wechat-article-exporter): 微信公众号文章导出工具，适用于内容备份与迁移
 
 ---
 
-[academic/awesome-datascience：：memo：一个很棒的数据科学仓库，用于学习和应用现实世界的问题。](https://github.com/academic/awesome-datascience)
+## 娱乐影音
 
-[Build Your Own X](https://github.com/codecrafters-io/build-your-own-x) : 用代码实现自己的版本的 X （例如：Redis、Kafka、NGINX 等）,各方向的项目实战教程
-
-[sindresorhus/awesome: 😎 Awesome lists about all kinds of interesting topics](https://github.com/sindresorhus/awesome?tab=readme-ov-file) : 关于计算机的相关开源项目的导航
-
-[Kamranahmedse/developer-roadmap：互动式路线图、指南及其他教育内容，帮助开发者在职业上成长。](https://github.com/kamranahmedse/developer-roadmap)
-
-[donnemartin/system-design-primer: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.](https://github.com/donnemartin/system-design-primer?tab=readme-ov-file) : 除了编程面试，系统设计也是许多科技公司技术**面试流程****的必修**部分。**练习常见的系统设计面试问题**，并将结果与**示例解答****进行比较**：讨论、代码和图表。
-
+[Predidit/Kazumi](https://github.com/Predidit/Kazumi): 基于自定义规则的番剧采集APP，支持流媒体在线观看、弹幕、实时超分辨率，适用于动漫爱好者
 
 ---
 
-[prakhar1989/awesome-courses: :books: List of awesome university courses for learning Computer Science!](https://github.com/prakhar1989/awesome-courses) : 免费提供在线的优秀计算机科学课程
+## AI 与浏览器自动化
 
+[vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser): 用于AI代理的浏览器自动化CLI，适用于AI Agent开发
 
----
-
-[toeverything/AFFiNE：Notion和Miro可以有更多。AFFiNE是一个下一代知识库，将规划、排序和创造整合在一起。隐私优先，开源、可定制且随时可用。](https://github.com/toeverything/AFFiNE)
-
+[browser-use/browser-use](https://github.com/browser-use/browser-use): 让网站对AI代理可访问，轻松在线自动化任务，适用于自动化测试与AI流程
 
 ---
 
-[datageartech/datagear: DataGear数据可视化分析平台，自由制作任何您想要的数据看板](https://github.com/datageartech/datagear)
+## 大数据
 
-[findyourmagic/dber：基于实体关系图的数据库设计工具](https://github.com/findyourmagic/dber)
+[awesome-bigdata](https://github.com/oxnr/awesome-bigdata): 大数据领域技术导航手册，适用于大数据学习者与从业者
 
-[Clockworklabs/SpacetimeDB：以光速发展](https://github.com/clockworklabs/SpacetimeDB)
+[BigData-Notes](https://github.com/heibaiying/BigData-Notes): 大数据技术（Hadoop、Spark等）入门指南和学习资料，适用于初学者
 
-[apache/camel：Apache Camel 是一个开源集成框架，使您能够快速轻松地集成各种数据消耗或产生数据的系统。](https://github.com/apache/camel)
+[God-Of-BigData](https://github.com/wangzhiwubigdata/God-Of-BigData): 大数据学习路线指南，适用于方向迷茫的学习者
 
-
----
-
-[henrygd/beszel：轻量级服务器监控中心，包含历史数据、Docker 统计和警报。](https://github.com/henrygd/beszel)
-
-
-
-[ripienaar/free-for-dev：包含 DevOps 和 Infradev 感兴趣的免费套餐的 SaaS、PaaS 和 IaaS 产品列表](https://github.com/ripienaar/free-for-dev)
-
-
-
-[kestra-io/kestra：任务关键应用的事件驱动编排与调度平台](https://github.com/kestra-io/kestra)
-
-
-https://github.com/whyour/qinglong
-
-
+[TheKingOfBigData](https://github.com/BigDataScholar/TheKingOfBigData): 大数据学习资源汇总，适用于进阶学习者
 
 ---
 
-[public-apis/public-apis: A collective list of free APIs](https://github.com/public-apis/public-apis)
+## 学习教程与计算机科学
 
-[SocialSisterYi/bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect)
+[source-code-hunter](https://github.com/doocs/source-code-hunter): 互联网行业主流技术底层实现原理剖析，适用于进阶开发者
 
-[FQrabbit/bilibili-data: 哔哩哔哩弹幕网 http://www.bilibili.com 数据爬虫](https://github.com/FQrabbit/bilibili-data)
+[awesome-datascience](https://github.com/academic/awesome-datascience): 数据科学学习与应用资源仓库，适用于数据科学从业者
 
-[Evil0ctal/Douyin_TikTok_Download_API: 🚀「Douyin_TikTok_Download_API」是一个开箱即用的高性能异步抖音、快手、TikTok、Bilibili数据爬取工具，支持API调用，在线批量解析及下载。](https://github.com/Evil0ctal/Douyin_TikTok_Download_API)
+[Build Your Own X](https://github.com/codecrafters-io/build-your-own-x): 用代码实现Redis、Kafka、NGINX等项目的实战教程，适用于全栈开发者深入理解原理
 
+[awesome](https://github.com/sindresorhus/awesome): 计算机相关开源项目综合导航，适用于各方向开发者
+
+[developer-roadmap](https://github.com/kamranahmedse/developer-roadmap): 互动式开发者成长路线图与指南，适用于职业规划与技能提升
+
+[system-design-primer](https://github.com/donnemartin/system-design-primer): 系统设计面试准备资料与示例解答，适用于准备技术面试的开发者
+
+[awesome-courses](https://github.com/prakhar1989/awesome-courses): 免费在线优秀计算机科学课程列表，适用于自学计算机科学
 
 ---
 
-[awesomedata/awesome-public-datasets：以主题为中心的HQ开放数据集列表。](https://github.com/awesomedata/awesome-public-datasets?tab=readme-ov-file)
+## 知识库与生产力
 
-[Hacktoberfest Accepted Projects](https://github.com/topics/hacktoberfest-accepted)
+[AFFiNE](https://github.com/toeverything/AFFiNE): 下一代知识库，融合规划、排序与创造，隐私优先、开源可定制，适用于笔记与项目管理
 
-https://github.com/datawhalechina/llm-cookbook
+---
 
-https://github.com/pkmital/CADL
+## 开发工具、数据库与数据可视化
 
-https://github.com/datawhalechina/happy-llm
+[datagear](https://github.com/datageartech/datagear): 数据可视化分析平台，自由制作数据看板，适用于数据分析与BI场景
 
+[dber](https://github.com/findyourmagic/dber): 基于实体关系图的数据库设计工具，适用于数据库架构设计
 
-https://github.com/zhaoyue4810/pianke
+[SpacetimeDB](https://github.com/clockworklabs/SpacetimeDB): 高性能数据库，适用于实时应用与游戏后端
 
-https://github.com/ianho7/maptoposter-online
+[Apache Camel](https://github.com/apache/camel): 开源集成框架，快速集成各类数据系统，适用于企业级数据集成
 
-https://github.com/cxq0517/htmltool2
+---
 
-https://github.com/OpenBMB/VoxCPM
+## 运维监控与DevOps
 
-https://github.com/XBuilderLAB/cheat-on-money
+[beszel](https://github.com/henrygd/beszel): 轻量级服务器监控中心，包含历史数据、Docker统计和警报，适用于运维人员
 
+[free-for-dev](https://github.com/ripienaar/free-for-dev): DevOps和Infradev感兴趣的免费SaaS、PaaS和IaaS产品列表，适用于开发者选型
 
-https://github.com/tw93/Waza
+[kestra](https://github.com/kestra-io/kestra): 事件驱动编排与调度平台，适用于任务关键型应用
 
-https://github.com/rohitg00/agentmemory
+[qinglong](https://github.com/whyour/qinglong): 定时任务管理面板，支持多语言脚本，适用于自动化脚本调度
 
+---
 
-https://github.com/freestylefly/awesome-gpt-image-2
+## API与数据采集
 
-https://github.com/Doryoku1223/lunwen-skill
+[public-apis](https://github.com/public-apis/public-apis): 免费API集合列表，适用于开发者快速集成第三方服务
 
-https://github.com/AgentAlphaAGI/Idea2Paper
+[bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect): B站API收集整理，适用于B站相关开发者
 
-https://github.com/OpenCut-app/OpenCut
+[bilibili-data](https://github.com/FQrabbit/bilibili-data): 哔哩哔哩弹幕网数据爬虫，适用于数据采集与分析
 
-https://github.com/couragec/LLMInternSkill
+[Douyin_TikTok_Download_API](https://github.com/Evil0ctal/Douyin_TikTok_Download_API): 高性能异步抖音、快手、TikTok、Bilibili数据爬取工具，支持API调用与批量下载，适用于短视频数据分析
 
-https://github.com/Leey21/awesome-ai-research-writing
+---
 
-https://github.com/academic/awesome-datascience
+## 数据集
 
-https://github.com/academic/awesome-datascience
+[awesome-public-datasets](https://github.com/awesomedata/awesome-public-datasets): 以主题为中心的高质量开放数据集列表，适用于机器学习与数据分析
 
-https://github.com/op7418/Humanizer-zh
+---
 
-https://github.com/heygen-com/hyperframes:适合做动画类型视频
+## AI / LLM
 
-https://github.com/KKKKhazix/khazix-skills
+[llm-cookbook](https://github.com/datawhalechina/llm-cookbook): 面向开发者的LLM入门教程，适用于AI应用开发初学者
 
-https://github.com/QIN2DIM/epic-awesome-gamer
+[happy-llm](https://github.com/datawhalechina/happy-llm): 快乐大模型学习教程，适用于LLM入门
 
-https://github.com/DayuanJiang/next-ai-draw-io
+[Humanizer-zh](https://github.com/op7418/Humanizer-zh): 中文文本人性化处理工具，适用于内容创作与文案优化
 
-https://github.com/santifer/career-ops：适合对岗位需求高，水平高的人群，密集求职的开发者、技术从业者、需要频繁根据岗位调整简历的求职者
+[VoxCPM](https://github.com/OpenBMB/VoxCPM): 语音预训练模型，适用于语音AI研究与开发
 
-https://github.com/can4hou6joeng4/boss-agent-cli
+[LLMInternSkill](https://github.com/couragec/LLMInternSkill): LLM实习技能汇总，适用于想进入AI行业的实习生
+
+[awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing): AI学术写作资源汇总，适用于科研人员
+
+[awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2): GPT图像生成相关资源汇总，适用于AI绘画创作者
+
+[Idea2Paper](https://github.com/AgentAlphaAGI/Idea2Paper): 从想法到论文的AI辅助工具，适用于学术研究者
+
+[next-ai-draw-io](https://github.com/DayuanJiang/next-ai-draw-io): AI辅助流程图绘制工具，适用于技术文档编写
+
+[hyperframes](https://github.com/heygen-com/hyperframes): 动画类型视频制作框架，适用于AI视频创作
+
+[agentmemory](https://github.com/rohitg00/agentmemory): Agent记忆库，适用于AI Agent记忆管理开发
+
+---
+
+## 求职与职业发展
+
+[career-ops](https://github.com/santifer/career-ops): 适合高频求职的技术从业者，支持按岗位调整简历，适用于密集求职的开发者
+
+[boss-agent-cli](https://github.com/can4hou6joeng4/boss-agent-cli): Boss直聘自动化工具，适用于求职流程自动化
+
+---
+
+## 其他工具
+
+[pianke](https://github.com/zhaoyue4810/pianke): 片刻/内容创作相关工具
+
+[maptoposter-online](https://github.com/ianho7/maptoposter-online): 地图海报在线生成工具，适用于个性化地图海报制作
+
+[htmltool2](https://github.com/cxq0517/htmltool2): HTML开发辅助工具
+
+[cheat-on-money](https://github.com/XBuilderLAB/cheat-on-money): 财务/记账相关工具
+
+[Waza](https://github.com/tw93/Waza): 开发效率工具
+
+[lunwen-skill](https://github.com/Doryoku1223/lunwen-skill): 论文写作技巧与工具
+
+[OpenCut](https://github.com/OpenCut-app/OpenCut): 开源剪辑工具，适用于视频创作者
+
+[khazix-skills](https://github.com/KKKKhazix/khazix-skills): 技能学习资源汇总
+
+[epic-awesome-gamer](https://github.com/QIN2DIM/epic-awesome-gamer): 游戏自动化相关工具
+
+[CADL](https://github.com/pkmital/CADL): 计算与自动微分学习课程，适用于深度学习基础学习
+
+[Hacktoberfest Accepted Projects](https://github.com/topics/hacktoberfest-accepted): Hacktoberfest开源贡献活动项目集合，适用于开源新手参与
