@@ -177,7 +177,7 @@ document.head.appendChild(style);
 
 /* ==========================================
    可滑动卡片列表 — 拖拽滚动
-   参考 uiu/sliding-square-list.tsx 的 pointer 事件实现
+   基于 pointer 事件，通过移动距离 + 按压时长判定点击/拖拽
    ========================================== */
 document$.subscribe(function() {
   document.querySelectorAll('.web-scroll').forEach(function(container) {
@@ -188,14 +188,23 @@ document$.subscribe(function() {
     var isDown = false;
     var startX = 0;
     var scrollStart = 0;
-    var moved = false;
+    var startTime = 0;
+    var tapTarget = null;
+
+    var MOVE_THRESHOLD = 10;  // 移动超过 10px 判定为拖拽
+    var TIME_THRESHOLD = 300; // 按压超过 300ms 判定为长按（不触发点击）
 
     container.addEventListener('pointerdown', function(e) {
       if (e.button !== 0) return; // 只响应左键
       isDown = true;
-      moved = false;
       startX = e.pageX;
       scrollStart = container.scrollLeft;
+      startTime = Date.now();
+
+      // 找到按下位置的 .web-card 中的可点击元素
+      var card = e.target.closest('.web-card');
+      tapTarget = card ? (card.querySelector('a') || card.querySelector('button') || card) : null;
+
       container.style.cursor = 'grabbing';
       container.style.scrollBehavior = 'auto'; // 拖拽时关闭平滑滚动
       container.setPointerCapture(e.pointerId);
@@ -203,32 +212,39 @@ document$.subscribe(function() {
 
     container.addEventListener('pointermove', function(e) {
       if (!isDown) return;
-      var dx = e.pageX - startX;
-      if (Math.abs(dx) > 4) moved = true;
-      container.scrollLeft = scrollStart - dx;
+      container.scrollLeft = scrollStart - (e.pageX - startX);
     });
 
-    var release = function() {
+    container.addEventListener('pointerup', function(e) {
       if (!isDown) return;
+      var dx = Math.abs(e.pageX - startX);
+      var dt = Date.now() - startTime;
+
+      // 短按 + 无明显移动 → 视为点击
+      if (dx < MOVE_THRESHOLD && dt < TIME_THRESHOLD && tapTarget) {
+        tapTarget.click();
+      }
+
       isDown = false;
+      tapTarget = null;
       container.style.cursor = '';
       container.style.scrollBehavior = 'smooth';
-    };
+    });
 
-    container.addEventListener('pointerup', release);
-    container.addEventListener('pointerleave', release);
-    container.addEventListener('pointercancel', release);
+    container.addEventListener('pointerleave', function() {
+      if (!isDown) return;
+      isDown = false;
+      tapTarget = null;
+      container.style.cursor = '';
+      container.style.scrollBehavior = 'smooth';
+    });
 
-    // 拖拽过就不触发链接点击
-    container.querySelectorAll('.web-card').forEach(function(card) {
-      card.addEventListener('click', function(e) {
-        if (moved) {
-          e.preventDefault();
-          e.stopPropagation();
-          e.stopImmediatePropagation();
-          moved = false;
-        }
-      }, true);
+    container.addEventListener('pointercancel', function() {
+      if (!isDown) return;
+      isDown = false;
+      tapTarget = null;
+      container.style.cursor = '';
+      container.style.scrollBehavior = 'smooth';
     });
   });
 });
