@@ -48,8 +48,8 @@ nav = [
     { "主页" = "index.md" },
     { "分享" = [
         "blog/web/index.md",
-        "blog/web/2026-02-07-网站分享.md",
-        "blog/web/2026-02-09-github项目分享.md"]},
+        "blog/web/2026-02-07-Web_Share.md",
+        "blog/web/2026-02-09-GitHub_Project_Share.md"]},
     { "学习" = [
         "blog/study/index.md",
         { "Git" = [

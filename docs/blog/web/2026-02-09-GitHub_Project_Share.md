@@ -1,5 +1,5 @@
 ---
-title: github项目分享
+title: GitHub项目分享
 date: 2026-02-09
 hide:
   - footer
@@ -7,7 +7,7 @@ hide:
 comments: true
 ---
 
-# github项目分享
+# GitHub项目分享
 
 ---
 
