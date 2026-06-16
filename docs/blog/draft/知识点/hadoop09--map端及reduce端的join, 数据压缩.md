@@ -1,8 +1,5 @@
 # Hadoop Map端及Reduce端的Join实现与数据压缩
 
-> 整理自：CSDN博客
-
----
 
 ## 目录
 
