@@ -1,10 +1,10 @@
-# Agent Loop·工程指南
+# Agent Loop工程
 
 <div class="highlight-box highlight-warning">
-  <span class="key-point">🔥 2026 年下半年 AI 圈最火的概念</span>
+  <span class="key-point">🔥 2026 年下半年 AI 圈最火的概念 --- </span>
 </div>
+<span class="highlight-text">别再写 Prompt 了，赶紧来设计 Loop！</span>
 
-> 2026 年下半年 AI 圈最火的概念：<span class="highlight-text">别再写 Prompt 了，赶紧来设计 Loop！</span>
 
 ---
 
