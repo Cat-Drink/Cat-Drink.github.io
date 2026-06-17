@@ -344,40 +344,6 @@ img.img1, img.img2, img.img3 {
   background: linear-gradient(120deg, rgba(81, 143, 193, 0.35) 0%, rgba(81, 143, 193, 0.2) 100%);
 }
 
-/* ==========================================
-   长文博客文章排版美化
-   ========================================== */
-
-/* 文章标题 - 更大的视觉冲击与装饰 */
-.md-typeset h1 {
-  font-size: 2.4rem;
-  font-weight: 800;
-  line-height: 1.3;
-  margin-bottom: 1.5rem;
-  position: relative;
-  padding-bottom: 0.8rem;
-}
-
-.md-typeset h1::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 3.6rem;
-  height: 3px;
-  border-radius: 2px;
-  background: var(--md-primary-fg-color);
-}
-
-/* 文章 h2 标题风格 */
-.md-typeset h2 {
-  font-size: 1.65rem;
-  font-weight: 700;
-  margin-top: 2.2rem;
-  margin-bottom: 0.8rem;
-  color: var(--md-primary-fg-color);
-}
-
 /* 文章段落 - 阅读体验优化 */
 .md-typeset p {
   line-height: 1.85;
@@ -386,12 +352,6 @@ img.img1, img.img2, img.img3 {
   text-align: justify;
 }
 
-/* 首段大字号 */
-.md-typeset > p:first-of-type {
-  font-size: 1.1rem;
-  line-height: 1.9;
-  color: var(--md-default-fg-color--light);
-}
 
 /* 分隔线装饰 - 风格化 section 分割 */
 .md-typeset hr {
@@ -480,25 +440,6 @@ img.img1, img.img2, img.img3 {
 
 [data-md-color-scheme="slate"] .md-typeset code {
   border-color: rgba(255, 255, 255, 0.1);
-}
-
-/* 移动端响应式微调 */
-@media screen and (max-width: 76.1875em) {
-  .md-typeset h1 {
-    font-size: 1.8rem;
-  }
-
-  .md-typeset h2 {
-    font-size: 1.35rem;
-  }
-
-  .md-typeset p {
-    line-height: 1.75;
-  }
-
-  .md-typeset > p:first-of-type {
-    font-size: 1.05rem;
-  }
 }
 
 
