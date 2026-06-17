@@ -1,6 +1,7 @@
 ---
-title: 学习
-description: 学习的内容笔记
+title: wiki
+description: wiki合集
+instant: false
 ---
 
 # 导览

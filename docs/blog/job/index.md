@@ -1,6 +1,6 @@
 ---
-title: 上岸备战
-description: 备战
+title: 找工作
+description: 找工作的准备工作
 instant: false
 ---
 

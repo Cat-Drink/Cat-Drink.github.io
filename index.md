@@ -1,6 +1,7 @@
 ---
-title: 撞南墙
-description: 撞过的南墙
+title: 上岸备战
+description: 备战
+instant: false
 ---
 
 # 导览
