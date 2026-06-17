@@ -1,3 +1,17 @@
+---
+title: Hadoop Map端及Reduce端的Join实现与数据压缩
+authors:
+  - name: 猫酒
+    email: 2738035238@qq.com
+categories:
+  - Hadoop
+  - Join
+hide:
+  - footer
+  - feedback
+comments: true
+---
+
 # Hadoop Map端及Reduce端的Join实现与数据压缩
 
 ## 一、Map端Join

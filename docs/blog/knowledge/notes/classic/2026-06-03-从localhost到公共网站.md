@@ -1,8 +1,19 @@
-# 开发指南：从 localhost 到公共网站（总结版）
-
-&gt; 一份简洁实用的网站上线全流程指南，涵盖技术、合规、收款及运维。
-
 ---
+title: 从 localhost 到公共网站
+date: 2026-06-03
+authors:
+  - name: 猫酒
+    email: 2738035238@qq.com
+categories:
+  - localhost
+  - 网站
+hide:
+  - footer
+  - feedback
+comments: true
+---
+
+# 开发指南：从 localhost 到公共网站
 
 ## 核心观点
 

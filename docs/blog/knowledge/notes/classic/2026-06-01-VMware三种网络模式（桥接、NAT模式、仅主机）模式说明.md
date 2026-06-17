@@ -1,3 +1,18 @@
+---
+title: VMware三种网络模式（桥接、NAT模式、仅主机）模式说明
+date: 2026-06-01
+authors:
+  - name: 猫酒
+    email: 2738035238@qq.com
+categories:
+  - VMware
+  - 网络
+hide:
+  - footer
+  - feedback
+comments: true
+---
+
 # VMware三种网络模式（桥接、NAT模式、仅主机）模式说明
 
 VMware 提供了三种主要的网络连接模式：桥接模式（Bridged Mode）、NAT模式（Network Address Translation Mode）和仅主机模式（Host-Only Mode）。每种模式都有其独特的特点和适用场景，下面将详细介绍这三种模式的区别。

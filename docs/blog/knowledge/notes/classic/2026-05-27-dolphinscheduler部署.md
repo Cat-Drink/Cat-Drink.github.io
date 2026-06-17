@@ -1,3 +1,19 @@
+---
+title: DolphinScheduler 部署指南
+date: 2026-05-27
+authors:
+  - name: 猫酒
+    email: 2738035238@qq.com
+categories:
+  - dolphinscheduler
+  - 部署
+  - 3.3.1
+hide:
+  - footer
+  - feedback
+comments: true
+---
+
 # DolphinScheduler 3.3.1 部署指南
 
 > 官方文档参考：[DolphinScheduler 伪集群部署](https://dolphinscheduler.apache.org/zh-cn/docs/3.3.1/guide/installation/pseudo-cluster)
