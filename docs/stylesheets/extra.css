@@ -280,4 +280,225 @@ img.img1, img.img2, img.img3 {
   background: rgba(255, 255, 255, 0.15);
 }
 
+/* ==========================================
+   重点内容高亮样式
+   ========================================== */
+
+/* 重点提示框 */
+.highlight-box {
+  padding: 1rem 1.2rem;
+  border-radius: 0.6rem;
+  margin: 1rem 0;
+  border-left: 4px solid #518FC1;
+  background: linear-gradient(135deg, rgba(81, 143, 193, 0.1) 0%, rgba(81, 143, 193, 0.05) 100%);
+}
+
+/* 成功/正向提示 */
+.highlight-success {
+  border-left-color: #48bb78;
+  background: linear-gradient(135deg, rgba(72, 187, 120, 0.12) 0%, rgba(72, 187, 120, 0.05) 100%);
+}
+
+/* 警告/注意提示 */
+.highlight-warning {
+  border-left-color: #ed8936;
+  background: linear-gradient(135deg, rgba(237, 137, 54, 0.12) 0%, rgba(237, 137, 54, 0.05) 100%);
+}
+
+/* 危险/重要提示 */
+.highlight-danger {
+  border-left-color: #e53e3e;
+  background: linear-gradient(135deg, rgba(229, 62, 62, 0.12) 0%, rgba(229, 62, 62, 0.05) 100%);
+}
+
+/* 高亮文字样式 */
+.highlight-text {
+  background: linear-gradient(120deg, rgba(81, 143, 193, 0.25) 0%, rgba(81, 143, 193, 0.15) 100%);
+  padding: 0.12rem 0.4rem;
+  border-radius: 0.3rem;
+  font-weight: 600;
+}
+
+/* 核心要点强调 */
+.key-point {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+  letter-spacing: 0.02em;
+}
+
+/* 深色模式适配高亮框 */
+[data-md-color-scheme="slate"] .highlight-box {
+  background: linear-gradient(135deg, rgba(81, 143, 193, 0.18) 0%, rgba(81, 143, 193, 0.08) 100%);
+}
+[data-md-color-scheme="slate"] .highlight-success {
+  background: linear-gradient(135deg, rgba(72, 187, 120, 0.2) 0%, rgba(72, 187, 120, 0.08) 100%);
+}
+[data-md-color-scheme="slate"] .highlight-warning {
+  background: linear-gradient(135deg, rgba(237, 137, 54, 0.2) 0%, rgba(237, 137, 54, 0.08) 100%);
+}
+[data-md-color-scheme="slate"] .highlight-danger {
+  background: linear-gradient(135deg, rgba(229, 62, 62, 0.2) 0%, rgba(229, 62, 62, 0.08) 100%);
+}
+[data-md-color-scheme="slate"] .highlight-text {
+  background: linear-gradient(120deg, rgba(81, 143, 193, 0.35) 0%, rgba(81, 143, 193, 0.2) 100%);
+}
+
+/* ==========================================
+   长文博客文章排版美化
+   ========================================== */
+
+/* 文章标题 - 更大的视觉冲击与装饰 */
+.md-typeset h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.md-typeset h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3.6rem;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--md-primary-fg-color);
+}
+
+/* 文章 h2 标题风格 */
+.md-typeset h2 {
+  font-size: 1.65rem;
+  font-weight: 700;
+  margin-top: 2.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--md-primary-fg-color);
+}
+
+/* 文章段落 - 阅读体验优化 */
+.md-typeset p {
+  line-height: 1.85;
+  font-size: 1rem;
+  margin: 1em 0;
+  text-align: justify;
+}
+
+/* 首段大字号 */
+.md-typeset > p:first-of-type {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: var(--md-default-fg-color--light);
+}
+
+/* 分隔线装饰 - 风格化 section 分割 */
+.md-typeset hr {
+  margin: 2.8rem auto;
+  width: 40%;
+  max-width: 120px;
+  height: 2px;
+  border: none;
+  background: linear-gradient(90deg, transparent, var(--md-primary-fg-color), transparent);
+  opacity: 0.5;
+  position: relative;
+}
+
+.md-typeset hr::before {
+  content: '◆';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.6rem;
+  color: var(--md-primary-fg-color);
+  background: var(--md-default-bg-color);
+  padding: 0 0.6rem;
+  line-height: 1;
+}
+
+/* 引用块 - 优雅的侧边栏风格 */
+.md-typeset blockquote {
+  border-left: 3px solid var(--md-primary-fg-color);
+  border-radius: 0 6px 6px 0;
+  padding: 0.8rem 1.2rem;
+  margin: 1.2rem 0;
+  background: linear-gradient(135deg, rgba(81, 143, 193, 0.06) 0%, transparent 100%);
+  color: var(--md-default-fg-color--light);
+  font-style: normal;
+}
+
+.md-typeset blockquote p {
+  margin: 0.4rem 0;
+}
+
+/* 强调文字 - 柔和高亮 */
+.md-typeset strong {
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+}
+
+/* 行内代码 - 精致 */
+.md-typeset code {
+  font-size: 0.88em;
+  padding: 0.15em 0.5em;
+  border-radius: 4px;
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* 无序列表美化 */
+.md-typeset ul li {
+  line-height: 1.8;
+  margin-bottom: 0.3rem;
+}
+
+.md-typeset ul li::marker {
+  color: var(--md-primary-fg-color);
+}
+
+/* 有序列表美化 */
+.md-typeset ol li {
+  line-height: 1.8;
+  margin-bottom: 0.3rem;
+}
+
+.md-typeset ol li::marker {
+  color: var(--md-primary-fg-color);
+  font-weight: 600;
+}
+
+/* 深色模式适配 */
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  background: linear-gradient(135deg, rgba(81, 143, 193, 0.12) 0%, transparent 100%);
+}
+
+[data-md-color-scheme="slate"] .md-typeset hr::before {
+  background: var(--md-default-bg-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset code {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 移动端响应式微调 */
+@media screen and (max-width: 76.1875em) {
+  .md-typeset h1 {
+    font-size: 1.8rem;
+  }
+
+  .md-typeset h2 {
+    font-size: 1.35rem;
+  }
+
+  .md-typeset p {
+    line-height: 1.75;
+  }
+
+  .md-typeset > p:first-of-type {
+    font-size: 1.05rem;
+  }
+}
+
 
