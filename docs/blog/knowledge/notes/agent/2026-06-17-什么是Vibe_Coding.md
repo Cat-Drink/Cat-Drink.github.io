@@ -1,3 +1,18 @@
+---
+title: 什么是 Vibe_Coding
+date: 2026-06-17
+authors:
+  - name: 猫酒
+    email: 2738035238@qq.com
+categories:
+  - Agent
+  - Vibe_Coding
+hide:
+  - footer
+  - feedback
+comments: true
+---
+
 # 聊一聊Vibe Coding
 
 不得不说，Vibe Coding 这个概念最近越来越火，但我发现很多人对它的理解其实挺模糊的。今天就好好聊聊这个事，从核心理念到具体怎么落地，再到底层的 AI 知识，一次性梳理清楚。

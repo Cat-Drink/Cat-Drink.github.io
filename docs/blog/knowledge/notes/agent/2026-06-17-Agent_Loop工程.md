@@ -1,3 +1,18 @@
+---
+title: Agent Loop工程
+date: 2026-06-17
+authors:
+  - name: 猫酒
+    email: 2738035238@qq.com
+categories:
+  - Agent
+  - Loop Engineering
+hide:
+  - footer
+  - feedback
+comments: true
+---
+
 # Agent Loop工程
 
 <div class="highlight-box highlight-warning">

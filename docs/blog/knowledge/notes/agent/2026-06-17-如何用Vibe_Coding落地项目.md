@@ -1,3 +1,17 @@
+---
+title: 如何用Vibe_Coding落地项目
+date: 2026-06-17
+authors:
+  - name: 猫酒
+    email: 2738035238@qq.com
+categories:
+  - Agent
+  - Vibe_Coding
+hide:
+  - footer
+  - feedback
+comments: true
+---
 
 # 如何用Vibe_Coding落地项目
 

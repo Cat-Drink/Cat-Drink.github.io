@@ -1,115 +1,17 @@
-<style>
-/* ===== 仅应用于本文档的页面级样式 ===== */
-
-/* 开篇大号引言 */
-.md-content p:first-of-type {
-  font-size: 1.15rem !important;
-  line-height: 1.95 !important;
-  color: var(--md-default-fg-color--light) !important;
-  background: linear-gradient(135deg, rgba(81, 143, 193, 0.07) 0%, transparent 100%);
-  padding: 1.2rem 1.5rem;
-  border-radius: 10px;
-  border-left: 3px solid var(--md-primary-fg-color);
-  margin: 1.2rem 0 1.8rem 0 !important;
-}
-
-/* 所有段落更宽松的行距 */
-.md-content p {
-  line-height: 1.9 !important;
-  margin: 1.1em 0 !important;
-  font-size: 1.02rem;
-}
-
-/* 标题风格 - 更张扬一点，符合文章气质 */
-.md-content h1 {
-  font-size: 2.6rem !important;
-  font-weight: 800 !important;
-  letter-spacing: -0.02em;
-  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, #2d5f8a 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0.5rem !important;
-}
-
-/* 时间线段落 - 有年份的句子高亮 */
-.md-content p:has(strong) {
-  border-left: 3px solid var(--md-primary-fg-color);
-  padding-left: 1rem;
-  border-radius: 0 4px 4px 0;
-}
-
-/* 关键数据高亮 */
-.md-content strong {
-  color: var(--md-primary-fg-color) !important;
-  font-weight: 700;
-}
-
-/* 引用风格的强调块 - 用 em 标签包装的非对称观点 */
-.md-content p em {
-  font-style: normal;
-  display: inline-block;
-  background: linear-gradient(120deg, rgba(81, 143, 193, 0.12) 0%, transparent 60%);
-  padding: 0.1rem 0.6rem;
-  border-radius: 4px;
-  font-weight: 600;
-  color: #2d5f8a;
-}
-
-/* 数字/年份 - 更醒目的展示 */
-.md-content p:not(:first-of-type) {
-  position: relative;
-}
-
-/* 文章最后一段 - 收尾留白与氛围 */
-.md-content p:last-of-type {
-  font-size: 1.1rem !important;
-  line-height: 2 !important;
-  padding: 1.2rem 1.5rem;
-  background: linear-gradient(135deg, rgba(81, 143, 193, 0.08) 0%, transparent 100%);
-  border-radius: 10px;
-  border-left: 3px solid var(--md-primary-fg-color);
-  margin-top: 2rem !important;
-}
-
-/* 时间线段落之间的分割感 */
-.md-content p:has(+ p) {
-  padding-bottom: 0.2rem;
-}
-
-/* 深色模式适配 */
-[data-md-color-scheme="slate"] .md-content p:first-of-type {
-  background: linear-gradient(135deg, rgba(81, 143, 193, 0.15) 0%, transparent 100%);
-}
-
-[data-md-color-scheme="slate"] .md-content p:last-of-type {
-  background: linear-gradient(135deg, rgba(81, 143, 193, 0.15) 0%, transparent 100%);
-}
-
-[data-md-color-scheme="slate"] .md-content p em {
-  background: linear-gradient(120deg, rgba(81, 143, 193, 0.22) 0%, transparent 60%);
-  color: #7bb8e4;
-}
-
-[data-md-color-scheme="slate"] .md-content h1 {
-  background: linear-gradient(135deg, #7bb8e4 0%, #518FC1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* 移动端微调 */
-@media screen and (max-width: 76.1875em) {
-  .md-content h1 {
-    font-size: 1.9rem !important;
-  }
-
-  .md-content p:first-of-type,
-  .md-content p:last-of-type {
-    padding: 1rem 1.2rem;
-  }
-}
-</style>
+---
+title: 三分钟了解 Loop Engineering
+date: 2026-06-17
+authors:
+  - name: 猫酒
+    email: 2738035238@qq.com
+categories:
+  - Agent
+  - Loop Engineering
+hide:
+  - footer
+  - feedback
+comments: true
+---
 
 # 三分钟了解 Loop Engineering
 
