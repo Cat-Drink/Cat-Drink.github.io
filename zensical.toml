@@ -49,50 +49,66 @@ nav = [
     { "分享" = [
         "blog/web/index.md",
         "blog/web/2026-02-07-Web_Share.md",
-        "blog/web/2026-02-09-GitHub_Project_Share.md"
+        "blog/web/2026-02-09-GitHub_Project_Share.md",
+        "blog/web/2026-06-18-AI_Web_Share.md",
+        "blog/web/2026-06-18-Fun_Web_Share.md"
     ]},
     { "学习" = [
         "blog/knowledge/index.md",
-        "blog/knowledge/2026-06-17-技术学习核心方法论整理.md",
+        "blog/knowledge/2026-06-17-如何正确进行技术学习.md",
         {"笔记" = [
             { "经典" = [
-            "blog/knowledge/notes/classic/2026-02-10-解决Linux系统下中文乱码的问题.md",
-            "blog/knowledge/notes/classic/2026-02-10-Dos_Comand.md",
-            "blog/knowledge/notes/classic/2026-02-11-Bug笔记.md",
-            "blog/knowledge/notes/classic/2026-02-15-iframe没有id和name时如何定位.md",
-            "blog/knowledge/notes/classic/2026-02-17-如何解决git冲突_refusing_to_merge_unrelated_histories.md",
-            "blog/knowledge/notes/classic/2026-02-18-电脑突然关机重启_教你追溯原因.md",
-            "blog/knowledge/notes/classic/2026-02-19-大数据系统在低水平主机的性能优化方案.md",
-            "blog/knowledge/notes/classic/2026-02-20-Promethus_HTTP_API_如何调用_PromQL.md",
-            "blog/knowledge/notes/classic/2026-03-01-Docker_Bug_Process.md",
-            "blog/knowledge/notes/classic/2026-03-20-Git Debug.md",
-            "blog/knowledge/notes/classic/2026-05-27-dolphinscheduler部署.md",
-            "blog/knowledge/notes/classic/2026-06-01-VMware三种网络模式（桥接、NAT模式、仅主机）模式说明.md",
-            "blog/knowledge/notes/classic/2026-06-02-TCP流量控制和拥塞控制是一回事吗？.md",
-            "blog/knowledge/notes/classic/2026-06-03-MySQL如何减少回表.md",
-            "blog/knowledge/notes/classic/2026-06-03-聚簇索引=主键索引吗？.md",
-            "blog/knowledge/notes/classic/2026-06-03-Hadoop的Map端及Reduce端的Join和数据压缩.md",
-            "blog/knowledge/notes/classic/2026-06-03-Hbase在百亿数据场景为什么查询速度依然非常快？.md",
-            "blog/knowledge/notes/classic/2026-06-03-MySQL锁机制.md",
-            "blog/knowledge/notes/classic/2026-06-03-一个表中可以有多个自增列吗？.md",
-            "blog/knowledge/notes/classic/2026-06-03-从localhost到公共网站.md",
-            "blog/knowledge/notes/classic/2026-06-03-Docker为什么比虚拟机快.md",
-            "blog/knowledge/notes/classic/2026-06-03-没并发为什么用Redis.md",
-            "blog/knowledge/notes/classic/2026-06-03-元素定位频繁抖动不稳定怎么解决.md",
-            "blog/knowledge/notes/classic/2026-06-03-SOLID设计原则.md",
-            "blog/knowledge/notes/classic/2026-06-03-排查SQL慢查询性能瓶颈.md",
-            "blog/knowledge/notes/classic/2026-06-03-MySQL8.0安装配置_Linux.md",
-            "blog/knowledge/notes/classic/2026-06-17-Git_Guide.md"
-        ]},
-        { "Agent" = [
-            "blog/knowledge/notes/agent/2026-06-03-说一下Harness.md",
-            "blog/knowledge/notes/agent/2026-06-17-3分钟了解Loop_Engineer.md",
-            "blog/knowledge/notes/agent/2026-06-17-什么是Vibe_Coding.md",
-            "blog/knowledge/notes/agent/2026-06-17-Agent_Loop工程.md",
-            "blog/knowledge/notes/agent/2026-06-17-职业发展与行业趋势篇.md",
-            "blog/knowledge/notes/agent/2026-06-17-如何用Vibe_Coding落地项目.md",
-            "blog/knowledge/notes/agent/2026-06-17-怎么更好地应用AI编程.md"
-        ]}
+                "blog/knowledge/classic/2026-02-10-解决Linux系统下中文乱码的问题.md",
+                "blog/knowledge/classic/2026-02-10-Dos_Comand.md",
+                "blog/knowledge/classic/2026-02-11-Bug笔记.md",
+                "blog/knowledge/classic/2026-02-15-iframe没有id和name时如何定位.md",
+                "blog/knowledge/classic/2026-02-17-如何解决git冲突_refusing_to_merge_unrelated_histories.md",
+                "blog/knowledge/classic/2026-02-18-电脑突然关机重启_教你追溯原因.md",
+                "blog/knowledge/classic/2026-02-19-大数据系统在低水平主机的性能优化方案.md",
+                "blog/knowledge/classic/2026-02-20-Promethus_HTTP_API_如何调用_PromQL.md",
+                "blog/knowledge/classic/2026-03-01-Docker_Bug_Process.md",
+                "blog/knowledge/classic/2026-03-20-Git Debug.md",
+                "blog/knowledge/classic/2026-05-27-dolphinscheduler部署.md",
+                "blog/knowledge/classic/2026-06-01-VMware三种网络模式（桥接、NAT模式、仅主机）模式说明.md",
+                "blog/knowledge/classic/2026-06-02-TCP流量控制和拥塞控制是一回事吗？.md",
+                "blog/knowledge/classic/2026-06-03-MySQL如何减少回表.md",
+                "blog/knowledge/classic/2026-06-03-聚簇索引=主键索引吗？.md",
+                "blog/knowledge/classic/2026-06-03-Hadoop的Map端及Reduce端的Join和数据压缩.md",
+                "blog/knowledge/classic/2026-06-03-Hbase在百亿数据场景为什么查询速度依然非常快？.md",
+                "blog/knowledge/classic/2026-06-03-MySQL锁机制.md",
+                "blog/knowledge/classic/2026-06-03-一个表中可以有多个自增列吗？.md",
+                "blog/knowledge/classic/2026-06-03-从localhost到公共网站.md",
+                "blog/knowledge/classic/2026-06-03-Docker为什么比虚拟机快.md",
+                "blog/knowledge/classic/2026-06-03-没并发为什么用Redis.md",
+                "blog/knowledge/classic/2026-06-03-元素定位频繁抖动不稳定怎么解决.md",
+                "blog/knowledge/classic/2026-06-03-SOLID设计原则.md",
+                "blog/knowledge/classic/2026-06-03-排查SQL慢查询性能瓶颈.md",
+                "blog/knowledge/classic/2026-06-03-MySQL8.0安装配置_Linux.md",
+                "blog/knowledge/classic/2026-06-17-Git_Guide.md",
+                "blog/knowledge/classic/2026-06-17-HDFS权限模型.md",
+                "blog/knowledge/classic/2026-06-17-前沿部署工程师（FDE）.md",
+                "blog/knowledge/classic/2026-06-18-Hive大表join大表如何调优.md",
+                "blog/knowledge/classic/2026-06-18-MySQL是否真的每张表最好不超过2000万数据.md",
+                "blog/knowledge/classic/2026-06-18-R语言.md",
+                "blog/knowledge/classic/2026-06-18-日志埋点与中台.md"
+            ]},
+            { "Agent" = [
+                "blog/knowledge/agent/20026-06-18-Agent的Skill过多？怎么提高命中.md",
+                "blog/knowledge/agent/2026-06-03-说一下Harness.md",
+                "blog/knowledge/agent/2026-06-17-3分钟了解Loop_Engineer.md",
+                "blog/knowledge/agent/2026-06-17-AI 核心概念.md",
+                "blog/knowledge/agent/2026-06-17-Agent_Loop工程.md",
+                "blog/knowledge/agent/2026-06-17-Skills的过去、现在和未来.md",
+                "blog/knowledge/agent/2026-06-17-Vibe_Coding的能力培养.md",
+                "blog/knowledge/agent/2026-06-17-什么是Vibe_Coding.md",
+                "blog/knowledge/agent/2026-06-17-怎么更好地应用AI编程.md",
+                "blog/knowledge/agent/2026-06-17-如何用Vibe_Coding落地项目.md",
+                "blog/knowledge/agent/2026-06-17-职业发展与行业趋势篇.md",
+                "blog/knowledge/agent/2026-06-18-Agent工程能力的培养.md",
+                "blog/knowledge/agent/2026-06-18-Trae实用技巧.md",
+                "blog/knowledge/agent/2026-06-18-从Agent驱动到Harness.md",
+                "blog/knowledge/agent/2026-06-18-构建生产级Agent_Memory的系统.md"
+            ]}
         ]}
     ]},
     { "放松" = [
@@ -100,16 +116,26 @@ nav = [
         "blog/relax/2026-02-15-电脑键盘的快捷键用法.md",
         "blog/relax/2026-05-03-古诗.md",
         "blog/relax/2026-06-02-如何准备日本二次元旅行.md",
-        "blog/relax/2026-06-02-如何给coser拍照.md",
+        "blog/relax/2026-06-02-拍照引导话术.md",
         "blog/relax/2026-06-03-广州美食.md",
-        "blog/relax/2026-06-03-吃什么.md"
+        "blog/relax/2026-06-03-为了健康怎么吃.md",
+        "blog/relax/2026-06-17-所想即所得.md"
     ]},
     { "上岸备战" = [
         "blog/job/index.md",
+        "blog/job/2026-06-18-求职综合指南.md",
         { "刷题笔记" = [
             "blog/job/coding/index.md",
             "blog/job/coding/刷题笔记.md",
             "blog/job/coding/手撕题.md",
+            { "算法拓展" = [
+                "blog/job/coding/算法拓展/枚举算法.md",
+                "blog/job/coding/算法拓展/KMP算法.md",
+                "blog/job/coding/算法拓展/贪心算法.md",
+                "blog/job/coding/算法拓展/分治算法.md",
+                "blog/job/coding/算法拓展/回溯算法.md",
+                "blog/job/coding/算法拓展/查找算法.md"
+            ]},
             { "Hot 100" = [
                 "blog/job/coding/hot100/2026-03-21-双指针.md",
                 "blog/job/coding/hot100/2026-03-23-哈希.md",
@@ -139,6 +165,25 @@ nav = [
             "blog/job/facebook/2026-03-01-计算机网络.md"
         ]}
     ]},
+    { "播客" = [
+        "blog/podcast/2026-06-18-毕业生补贴完全指南.md",
+        'blog/podcast/2026-06-18-脑力工作者的三种"累".md',
+        { "如何培养自己" = [
+            "blog/podcast/self_improve/00-开篇.md",
+            "blog/podcast/self_improve/01-认知觉醒.md",
+            "blog/podcast/self_improve/02-目标与方向.md",
+            "blog/podcast/self_improve/03-学习方法论.md",
+            "blog/podcast/self_improve/04-注意力与时间管理.md",
+            "blog/podcast/self_improve/05-行动与习惯.md",
+            "blog/podcast/self_improve/06-系统升级.md",
+            "blog/podcast/self_improve/07-生活哲学.md",
+            "blog/podcast/self_improve/99-结语.md"
+        ]},
+        { "轻音少女-相遇天使" = [
+            "blog/podcast/轻音少女-相遇天使/相遇天使-歌词.md",
+            "blog/podcast/轻音少女-相遇天使/相遇天使-推文.md"
+        ]}
+    ]},
     { "关于我" = [
         "blog/about/about.md",
         "blog/about/个人简历.md",
@@ -146,6 +191,11 @@ nav = [
         "blog/about/大学期间要完成的事情.md",
         "blog/about/毕业之前要做的事.md",
         "blog/about/如何培养自己-播客版.md"
+    ]},
+    { "技能" = [
+        "blog/skills-self/SKILL.md",
+        "blog/skills-self/markitdown-skill/SKILL.md",
+        "blog/skills-self/pretext-frontend-design/SKILL.md"
     ]}
 ]
 
