@@ -15,6 +15,11 @@ document$.subscribe(function() {
     sessionStorage.setItem('refreshed', 'true');
     location.reload(true);
   }
+
+  // 设置页面中所有 audio 元素的初始音量为 0.3（默认 1.0 为最大）
+  document.querySelectorAll('audio').forEach(function(audio) {
+    audio.volume = 0.3;
+  });
 });
 
 /**

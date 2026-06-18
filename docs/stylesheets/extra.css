@@ -360,6 +360,63 @@ img.img1, img.img2, img.img3 {
   border-radius: 20px;
 }
 
+/* 自定义音量控制 */
+.custom-volume-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.custom-volume-wrapper .volume-icon {
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.custom-volume-wrapper .volume-value {
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+  min-width: 2.5rem;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.custom-volume-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--md-default-fg-color--lightest);
+  outline: none;
+  cursor: pointer;
+}
+
+.custom-volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--md-primary-fg-color);
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.custom-volume-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.custom-volume-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: none;
+  background: var(--md-primary-fg-color);
+  cursor: pointer;
+}
+
 /* 深色模式 */
 [data-md-color-scheme="slate"] .music-player-wrapper {
   background: linear-gradient(135deg, rgba(81, 143, 193, 0.15) 0%, rgba(81, 143, 193, 0.06) 100%);
