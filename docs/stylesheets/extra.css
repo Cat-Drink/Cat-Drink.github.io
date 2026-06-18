@@ -1,7 +1,8 @@
 /* ==========================================
    Zensical-CatDrink-Blog 自定义样式
    ========================================== */
-   :root>* {
+ /* 主题主色调定义 */
+  :root>* {
     --md-primary-fg-color: #518FC1;
     --md-primary-fg-color--light: #518FC1;
     /* --md-primary-fg-color--dark: #518FC1; */
@@ -344,7 +345,11 @@ img.img1, img.img2, img.img3 {
   background: linear-gradient(120deg, rgba(81, 143, 193, 0.35) 0%, rgba(81, 143, 193, 0.2) 100%);
 }
 
-/* 文章段落 - 阅读体验优化 */
+/* ==========================================
+   基础文本样式优化 - 提升阅读体验
+   ========================================== */
+
+/* 文章段落 */
 .md-typeset p {
   line-height: 1.85;
   font-size: 1rem;
@@ -352,8 +357,7 @@ img.img1, img.img2, img.img3 {
   text-align: justify;
 }
 
-
-/* 分隔线装饰 - 风格化 section 分割 */
+/* 分隔线装饰 - 风格化章节分割 */
 .md-typeset hr {
   margin: 2.8rem auto;
   width: 40%;
@@ -378,7 +382,7 @@ img.img1, img.img2, img.img3 {
   line-height: 1;
 }
 
-/* 引用块 - 优雅的侧边栏风格 */
+/* 引用块 - 优雅的侧边栏渐变风格 */
 .md-typeset blockquote {
   border-left: 3px solid var(--md-primary-fg-color);
   border-radius: 0 6px 6px 0;
@@ -393,13 +397,13 @@ img.img1, img.img2, img.img3 {
   margin: 0.4rem 0;
 }
 
-/* 强调文字 - 柔和高亮 */
+/* 强调文字 - 加粗颜色强化 */
 .md-typeset strong {
   font-weight: 700;
   color: var(--md-default-fg-color);
 }
 
-/* 行内代码 - 精致 */
+/* 行内代码 - 边框圆角精致化 */
 .md-typeset code {
   font-size: 0.88em;
   padding: 0.15em 0.5em;
@@ -408,7 +412,7 @@ img.img1, img.img2, img.img3 {
   border: 1px solid var(--md-default-fg-color--lightest);
 }
 
-/* 无序列表美化 */
+/* 无序列表 - 行高优化 + 标记染色 */
 .md-typeset ul li {
   line-height: 1.8;
   margin-bottom: 0.3rem;
@@ -418,7 +422,7 @@ img.img1, img.img2, img.img3 {
   color: var(--md-primary-fg-color);
 }
 
-/* 有序列表美化 */
+/* 有序列表 - 行高优化 + 标记染色加粗 */
 .md-typeset ol li {
   line-height: 1.8;
   margin-bottom: 0.3rem;
@@ -429,15 +433,21 @@ img.img1, img.img2, img.img3 {
   font-weight: 600;
 }
 
-/* 深色模式适配 */
+/* ==========================================
+   深色模式 - 基础元素适配
+   ========================================== */
+
+/* 引用块深色适配 */
 [data-md-color-scheme="slate"] .md-typeset blockquote {
   background: linear-gradient(135deg, rgba(81, 143, 193, 0.12) 0%, transparent 100%);
 }
 
+/* 分隔线菱形背景深色适配 */
 [data-md-color-scheme="slate"] .md-typeset hr::before {
   background: var(--md-default-bg-color);
 }
 
+/* 行内代码边框深色适配 */
 [data-md-color-scheme="slate"] .md-typeset code {
   border-color: rgba(255, 255, 255, 0.1);
 }
