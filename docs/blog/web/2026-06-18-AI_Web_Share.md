@@ -132,6 +132,18 @@ comments: true
   <span class="web-card-tag">AI 对话</span>
 </a>
 
+<a class="web-card" draggable="false" href="https://aistudio.baidu.com/index" target="_blank" rel="noopener">
+  <span class="web-card-icon">🤖</span>
+  <span class="web-card-title">百度 AI 构建平台</span>
+  <span class="web-card-tag">AI 构建平台</span>
+</a>
+
+<a class="web-card" draggable="false" href="https://www.mindspore.cn/" target="_blank" rel="noopener">
+  <span class="web-card-icon">🤖</span>
+  <span class="web-card-title">MindSpore</span>
+  <span class="web-card-tag">AI 模型平台</span>
+</a>
+
   </div>
 </div>
 
@@ -186,6 +198,18 @@ comments: true
   <span class="web-card-icon">🤖</span>
   <span class="web-card-title">Mimo</span>
   <span class="web-card-tag">AI Agent 平台</span>
+</a>
+
+<a class="web-card" draggable="false" href="https://meowa.ai/" target="_blank" rel="noopener">
+  <span class="web-card-icon">🤖</span>
+  <span class="web-card-title">Meowa</span>
+  <span class="web-card-tag">AI Agent 平台</span>
+</a>
+
+<a class="web-card" draggable="false" href="https://uumit.com/knowledge-store/" target="_blank" rel="noopener">
+  <span class="web-card-icon">📚</span>
+  <span class="web-card-title">Umit Knowledge Store</span>
+  <span class="web-card-tag">AI 能力市集</span>
 </a>
 
   </div>
