@@ -1,6 +1,6 @@
 ---
-title: 网站合集
-description: 一些工具网站的合集
+title: 资源分享
+description: 分享一些好玩、有用的资源
 ---
 
 # 导览
