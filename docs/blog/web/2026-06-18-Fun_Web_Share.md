@@ -122,12 +122,6 @@ comments: true
   <span class="web-card-tag">克隆任意网站</span>
 </a>
 
-<a class="web-card" draggable="false" href="https://www.imagehub.cc/" target="_blank" rel="noopener">
-  <span class="web-card-icon">🖼️</span>
-  <span class="web-card-title">图床</span>
-  <span class="web-card-tag">图片托管</span>
-</a>
-
 <a class="web-card" draggable="false" href="https://www.paperturn.com/" target="_blank" rel="noopener">
   <span class="web-card-icon">📖</span>
   <span class="web-card-title">PaperTurn</span>
