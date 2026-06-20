@@ -4,7 +4,7 @@ date: 2026-06-20
 hide:
   - footer
   - feedback
-comments: true
+comments: false
 ---
 # 工具网站
 

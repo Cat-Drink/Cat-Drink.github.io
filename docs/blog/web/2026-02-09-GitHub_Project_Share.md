@@ -4,7 +4,7 @@ date: 2026-02-09
 hide:
   - footer
   - feedback
-comments: true
+comments: false
 ---
 
 # GitHub项目分享

@@ -4,7 +4,7 @@ date: 2026-02-07
 hide:
   - footer
   - feedback
-comments: true
+comments: false
 ---
 # AI工具分享
 
