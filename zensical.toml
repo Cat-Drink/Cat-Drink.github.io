@@ -150,6 +150,12 @@ nav = [
                 "blog/job/coding/hot100/2026-03-29-二分查找.md"
             ]}
         ]},
+        { "Agent面试" = [
+            "blog/job/agent面试/2026-06-20-AI面试全景知识体系.md",
+            "blog/job/agent面试/2026-06-20-Agent从开发到工作.md",
+            "blog/job/agent面试/2026-06-20-大模型Agent面试高频题.md",
+            "blog/job/agent面试/2026-06-20-请大神来锐评AI应用和Agent开发相关.md"
+        ]},
         { "面经" = [
           "blog/job/facebook/2026-03-01-Agent.md",
           "blog/job/facebook/2026-03-01-ClickHouse.md",
@@ -199,7 +205,15 @@ nav = [
         "blog/about/404.md",
         "blog/about/大学期间要完成的事情.md",
         "blog/about/毕业之前要做的事.md",
-        "blog/about/如何培养自己-播客版.md"
+        "blog/about/如何培养自己-播客版.md",
+        { "个人" = [
+            "blog/about/个人/1-面试经验.md",
+            "blog/about/个人/2-个人养成.md",
+            "blog/about/个人/3-如何快速社会化.md",
+            "blog/about/个人/4-简历优化.md",
+            "blog/about/个人/5-社交礼仪细节.md",
+            "blog/about/个人/6-如何入门学习.md"
+        ]}
     ]}
 ]
 
