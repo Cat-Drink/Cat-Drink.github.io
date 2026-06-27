@@ -1,0 +1,166 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{caption}
+
+% 配置
+\setmainfont{Roboto}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdftitle={Resume},
+    pdfpagemode=None
+}
+
+% 标题格式
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% 列表格式
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=4pt}
+\setlist[enumerate]{leftmargin=*}
+
+% 自定义命令
+\newcommand{\resumeItem}[1]{\item #1}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}
+  \item
+  \textbf{#1} \hfill #2 \\
+  \textit{#3} \hfill #4
+  \vspace{-5pt}
+}
+\newcommand{\resumeSubheadingNoLocation}[2]{
+  \vspace{-2pt}
+  \item
+  \textbf{#1} \hfill #2
+  \vspace{-5pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-2pt}
+  \item
+  \textbf{#1} \hfill #2
+  \vspace{-5pt}
+}
+
+% 开始文档
+\begin{document}
+
+% 头部信息
+\begin{center}
+  \textbf{\Huge 你的名字} \\[6pt]
+  \textit{求职意向：\textbf{后端开发工程师 / 前端开发工程师 / 算法工程师 / AI Agent 开发}} \\[6pt]
+  电话：138-XXXX-XXXX \quad
+  邮箱：\href{mailto:your.email@example.com}{your.email@example.com} \quad
+  GitHub：\href{https://github.com/yourusername}{github.com/yourusername} \quad
+  博客：\href{https://yourblog.com}{yourblog.com} \\[2pt]
+  所在地：城市 \quad 毕业院校：XXX大学 \quad 专业：计算机科学与技术 \quad 学历：本科/硕士
+\end{center}
+
+\vspace{10pt}
+
+\section{教育背景}
+
+\begin{itemize}
+  \resumeSubheading
+    {XXX大学}{XXXX.09 -- XXXX.06}
+    {计算机科学与技术 \quad GPA：3.8/4.0（专业排名：10/100）}{}
+  \begin{itemize}
+    \resumeItem{\textbf{核心课程}：数据结构、算法分析、计算机组成原理、操作系统、计算机网络、数据库系统原理、编译原理、机器学习}
+    \resumeItem{\textbf{荣誉奖项}：一等奖学金 X 次、国家奖学金、省级程序设计竞赛银奖、校级优秀毕业生}
+  \end{itemize}
+\end{itemize}
+
+\section{技术技能}
+
+\begin{itemize}
+  \item \textbf{编程语言}：C/C++ $\cdot$ Python $\cdot$ Go $\cdot$ JavaScript/TypeScript $\cdot$ Java $\cdot$ SQL
+  \item \textbf{数据结构与算法}：熟练掌握常见数据结构和算法，能够分析时间空间复杂度，LeetCode 解题 XXX 道
+  \item \textbf{后端开发}：Linux $\cdot$ TCP/IP $\cdot$ HTTP $\cdot$ MySQL $\cdot$ Redis $\cdot$ Git $\cdot$ Docker $\cdot$ RESTful API
+  \item \textbf{框架/工具}：\begin{itemize}
+    \item Web 框架：Gin $\cdot$ Echo $\cdot$ Spring Boot $\cdot$ Django $\cdot$ Express
+    \item 数据库：MySQL 索引优化 $\cdot$ Redis 缓存 $\cdot$ MongoDB
+    \item 云服务：AWS $\cdot$ 阿里云 $\cdot$ Docker $\cdot$ Kubernetes 基础
+  \end{itemize}
+  \item \textbf{AI/大模型}：Prompt Engineering $\cdot$ RAG $\cdot$ LangChain $\cdot$ LlamaIndex $\cdot$ 大模型微调基础 $\cdot$ Agent 开发
+  \item \textbf{前端开发}：HTML/CSS $\cdot$ React $\cdot$ Vue $\cdot$ Node.js（可根据实际情况增减）
+\end{itemize}
+
+\section{项目经验}
+
+\begin{itemize}
+
+  \resumeProjectHeading
+    {\href{https://github.com/yourusername/project1}{基于 RAG 的知识库问答系统}}{XXXX.03 -- XXXX.06}
+  \begin{itemize}
+    \resumeItem{项目介绍：构建了一个基于大语言模型的私有知识库问答系统，支持文档上传、向量检索、流式回答}
+    \resumeItem{技术栈：LangChain + LlamaIndex + OpenAI API + Chroma + FastAPI + React}
+    \resumeItem{负责：实现了多文档切分策略优化，改进了检索准确率，相比 baseline 提升了 15\% 的回答准确率}
+    \resumeItem{优化：实现了混合检索（关键词+向量），解决了纯向量检索在细粒度问题上性能不佳的问题}
+  \end{itemize}
+
+  \resumeProjectHeading
+    {\href{https://github.com/yourusername/project2}{分布式爬虫系统}}{XXXX.09 -- XXXX.12}
+  \begin{itemize}
+    \resumeItem{项目介绍：开发了一个高可用分布式爬虫，用于大规模数据采集，支持动态扩容和断点续爬}
+    \resumeItem{技术栈：Go + Redis + MongoDB + RabbitMQ + Docker}
+    \resumeItem{负责：设计了基于 Redis 分布式去重和任务队列架构，支持多节点并发抓取，日均抓取百万级页面}
+    \resumeItem{优化：实现了动态代理池和频率控制，爬虫可用性提升到 99\% 以上}
+  \end{itemize}
+
+  \resumeProjectHeading
+    {\href{https://github.com/yourusername/project3}{在线博客系统}}{XXXX.03 -- XXXX.06}
+  \begin{itemize}
+    \resumeItem{项目介绍：全栈开发支持 markdown 编辑、标签分类、搜索功能的个人博客系统}
+    \resumeItem{技术栈：Gin + MySQL + Redis + React + Nginx}
+    \resumeItem{负责：实现了基于 Redis 的页面缓存和热门文章推荐，QPS 提升了 3 倍}
+  \end{itemize}
+
+\end{itemize}
+
+\section{实习经历}
+
+\begin{itemize}
+
+  \resumeSubheading
+    {XXX科技有限公司}{XXXX.07 -- XXXX.09}
+    {后端开发实习生}{城市}
+  \begin{itemize}
+    \resumeItem{参与用户中心服务开发，负责用户注册登录接口和权限管理模块，覆盖单元测试覆盖率 80\%+}
+    \resumeItem{优化了数据库慢查询，通过添加联合索引将接口响应时间从 500ms 降到 50ms}
+    \resumeItem{协助定位线上问题，参与 code review，学习了工业级项目开发流程}
+  \end{itemize}
+
+  \resumeSubheading
+    {XXX互联网公司}{XXXX.07 -- XXXX.09}
+    {AI研发实习生}{城市}
+  \begin{itemize}
+    \resumeItem{参与大模型应用开发，基于 LangChain 构建了企业内部知识库问答原型}
+    \resumeItem{优化 RAG 检索策略，对比实验证明改进后回答准确率提升 12\%}
+    \resumeItem{输出技术文档，分享给团队，得到导师认可}
+  \end{itemize}
+
+\end{itemize}
+
+\section{竞赛/荣誉}
+
+\begin{itemize}
+  \item \textbf{ACM-ICPC 区域赛} \hfill 银奖 \hfill XXXX
+  \item \textbf{全国大学生程序设计竞赛} \hfill 一等奖 \hfill XXXX
+  \item \textbf{机器人竞赛/大数据竞赛} \hfill 二等奖 \hfill XXXX
+  \item \textbf{国家奖学金 / 一等奖学金} \hfill X次 \hfill XXXX -- XXXX
+\end{itemize}
+
+\section{开源贡献 / 博客}
+
+\begin{itemize}
+  \item GitHub：\href{https://github.com/yourusername}{github.com/yourusername}，获得 XXX Star，XXX 粉丝
+  \item 技术博客：累计发表 XX 篇技术文章，累计阅读量 XXX
+  \item 参与开源项目 XXX，合并了 X 个 PR，修复了若干 bug 实现了新功能
+\end{itemize}
+
+\end{document}
